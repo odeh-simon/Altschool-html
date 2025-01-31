@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body id="top">
+    <!-- Global Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Application Form</a></li>
+        </ul>
+    </nav>
+
+    <h1>ALT SCHOOL Application Form</h1>
+
+    <p>Take the next steps to apply at AltSchool Africa</p>
+    
+    <form action="" method="POST">
+        <!-- First Name and Last Name -->
+        <div>
+            <label for="firstName">First Name</label><br/>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required /><br/><br/>
+
+            <label for="lastName">Last Name</label><br/>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required /><br/><br/>
+        </div>
+
+        <!-- Gender and Date of Birth -->
+        <div>
+            <label for="gender">Gender</label><br/>
+            <select id="gender" name="gender" required>
+                <option value="">Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br/><br/>
+
+             <label for="dob">Date of Birth</label><br/>
+            <input type="date" id="dob" name="dob" required><br/><br/>
+        </div>
+
+        <!-- Email and Phone Number -->
+        <div>
+            <label for="email">Email Address</label><br/>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required><br/><br/>
+
+            <label for="phone">Phone Number</label><br/>
+            <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required><br/><br/>
+        </div>
+
+        <!-- Country and State/City of Residence -->
+        <div>
+            <label for="country">Country</label><br/>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="ghana">Ghana</option>
+                <option value="kenya">Kenya</option>
+            </select><br/><br/>
+
+            <label for="state">State/City of Residence</label><br/>
+            <input type="text" id="state" name="state" placeholder="Enter your state of residence" required><br/><br/>
+        </div>
+
+        <!-- How did you hear about us? -->
+        <div>
+            <label for="referral">How did you hear about us?</label><br/>
+            <select id="referral" name="referral" required>
+                <option value="">Select channel</option>
+                <option value="social_media">Social Media</option>
+                <option value="friend">Friend</option>
+                <option value="google">Google</option>
+            </select><br/><br/>
+        </div>
+
+        <!-- Password and Confirm Password -->
+        <div>
+            <label for="password">Password</label><br/>
+            <input type="password" id="password" name="password" placeholder="Enter password" required><br/><br/>
+
+            <label for="confirmPassword">Confirm Password</label><br/>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter password again" required><br/><br/>
+        </div>
+
+        <!-- Terms and Privacy Policy -->
+        <div>
+            <p>By clicking continue, I agree to <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.</p>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form><br/>
+
+    <!-- Fragment Identifier to Scroll Back to Top -->
+    <a href="#top">Back to Top</a>
+
+    <!-- Footer -->
+    <footer>
+        <p>Abuja Nigeria | &copy; Odeh Simon 2024</p>
+    </footer>
+</body>
+</html>

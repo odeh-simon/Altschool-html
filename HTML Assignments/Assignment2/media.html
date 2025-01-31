@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Simon's Journey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .profile-image {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 4px solid #2c3e50;
+        }
+
+        .album-section {
+            margin: 40px 0;
+        }
+
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .album-item {
+            background-color: #fafafa;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow: hidden; 
+        }
+
+        .album-item img, 
+        .album-item video {
+            width: 100%;
+            height: 300px; 
+            object-fit: cover; 
+            border-radius: 8px;
+        }
+
+        audio {
+            margin: 20px 0;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .download-resume {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .top-section > div {
+            flex: 1;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Me</h1>
+        <img src="assets/images/tab.jpg" alt="Profile image of Simon" class="profile-image">
+        <p>
+            Hello, and welcome to my personal page! My name is Simon, and I&apos;m excited to share a bit about myself through various forms of media.
+            Whether it's my professional journey, personal interests, or simply a glimpse into my life, you'll find it all here. As a passionate individual 
+            always eager to learn, I strive to push boundaries and embrace new challenges in everything I do. Feel free to explore and enjoy!
+        </p>
+
+        <!-- Resume -->
+        <div class="download-resume">
+            <a href="assets/doc/My CV[updated.pdf" download>My resume</a>
+        </div>
+
+        <!-- Audio Introduction -->
+        <div class="album-section">
+            <h2>An Audio Introduction of Myself</h2>
+            <audio controls>
+                <source src="assets/audios/Wizkid-Reckless-[TrendyBeatz.com].mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Intro Video -->
+        <div class="album-item">
+            <h2>A Visual Introduction of Myself</h2>
+            <video controls>
+                <source src="assets/videos/vid.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </div>
+
+        <!-- Album Section for Images and Videos -->
+        <div class="album-section">
+            <h2>Media Album</h2>
+            <div class="album-grid">
+                <!-- Image 1 -->
+                <div class="album-item">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="assets/images/tab.jpg">
+                        <source media="(min-width: 768px)" srcset="assets/images/mobile.jpg">
+                        <source media="(max-width: 767px)" srcset="assets/images/desktop.jpg">
+                        <img src="assets/images/desktop.jpg" alt="Recent picture of Simon">
+                    </picture>
+                </div>
+                <!-- Image 2 -->
+                <div class="album-item">
+                    <img src="assets/images/jmlic (1).jpg" alt="Another picture of Simon">
+                </div>
+                <!-- Image 3 -->
+                <div class="album-item">
+                    <img src="assets/images/corper.jpg" alt="Simon enjoying an activity">
+                </div>
+                <!-- Image 4 -->
+                <div class="album-item">
+                    <img src="assets/images/desktop2.jpg" alt="Simon enjoying an activity">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
