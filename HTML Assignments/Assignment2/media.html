@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Simon's Journey</title>
+    <title>Media Showcase</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -75,13 +75,13 @@
 
         audio {
             margin: 20px 0;
-            width: 50%;
+            width: 100%;
             max-width: 600px;
         }
 
         .intro-video{
             height: fit-content;
-        
+            width: 100%;
         }
 
         a {
@@ -110,9 +110,67 @@
             flex: 1;
             margin: 0 10px;
         }
+
+        /* Navbar Styles */
+        nav {
+            background-color: #2c3e50;
+            padding: 30px 0;
+            margin-bottom: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                margin: 0 auto;
+            }
+
+            nav {
+            padding: 10px 0;
+        }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Global Navigation -->
+    <nav>
+        <ul>
+            <li><a href="media.html">Home</a></li>
+            <li><a href="table.html">Altschool Courses</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <h1>About Me</h1>
         <img src="assets/images/tab.jpg" alt="Profile image of Simon" class="profile-image">
@@ -166,12 +224,4 @@
                 <div class="album-item">
                     <img src="assets/images/corper.jpg" alt="Simon enjoying an activity">
                 </div>
-                <!-- Image 4 -->
-                <div class="album-item">
-                    <img src="assets/images/desktop2.jpg" alt="Simon enjoying an activity">
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+               
